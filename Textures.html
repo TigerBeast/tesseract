@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Tesseract-Textures
+    </title>
+    <link rel="icon" href="My web images/Untitled2.png" type="image/icon type">
+    <head>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <script src="slide.js"></script>
+        <style>
+          .tet{
+            color: white;
+          }
+          .w{
+            width: 90%;
+            float: right;
+            margin-left: 200px;
+          }
+          .wi{
+            padding: 10px;
+            width: 90%;
+            float: right;
+            margin-left: 200px;
+          }
+                    body{
+                background-color:#2b2b2b;
+            }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 4px;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        .right{
+          float: right;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: darkgray;
+        }
+        ul{
+            position: fixed;
+            top:0;
+            width: 100%
+        }
+        .sidenav {
+  height: 90%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #acacac;
+}
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+border-bottom:1px solid #acacac77;
+}
+
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.tbd{
+  width: 220px;
+  height: 220px;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .hover-text {
+    opacity: 1;
+  }
+        </style>
+         <ul>
+          <li><img src="My web images/Untitled.png" width="120px" height="40" style="margin-top: 3px;"></li>
+            <li><a href="Home Page.html">Home </a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><input style="height: 35px; width: 300px; top: 10px; border-radius: 5px; padding: 6px 10px; margin-top: 5px; border: none;" name="fistname" placeholder="Search 100+ assets "></li>
+                  <li style="float: right;"><a href="#"><img src="My web images/shopping-cart-computer-icons-online-shopping-shopping-cart-b22b332659c67abf1a2fd6a99254ad83.png" width="25px" height="25px"></a></li>
+          </ul>
+    </head>
+    <body>
+      <div class="sidenav">
+        <a href="Textures.html"><img src="data:image/png;base64,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" width="15px" height="15px">Textures</a>
+        <a href="Models.html">Models</a>
+        <a href="#">HDRIs</a>
+      </div>
+      
+      <div class="main">
+        <h2 style="top: 50px;">Textures</h2>
+        <br>
+        <h2 style="color: white; font-size: large; font-family: Calibri;">Textures</h2>
+        <pre style="font-family: Arial, sans-serif;" class="tet">
+           Textures for 3D rendering. 
+           Compatible with all major software and renderers including Blender, Cinema 4D, Maya, 3ds Max and more. 
+           Start making better renders faster, today.</pre>
+      </div>
+      <div class="main" style="padding: 15px; border-bottom:1px solid #acacac7e;">
+        <p>             </p>
+      </div>
+      <div class="wi">
+        <table class="wi">
+          <tr>
+            <td class="zoom"><img src="My web images/WoodQuarteredChiffon001_Sphere.jpg" class="tbd"></td>
+            <td class="zoom"><img src="My web images/VeneerWhiteOakRandomMatched001_Sphere.png" class="tbd"></td>
+            <td class="zoom"><img src="My web images/BricksPaintedWhite001_Sphere.jpg" class="tbd"></td>
+            <td class="zoom"><img src="My web images/StoneMarbleCalacatta004_Sphere.jpg" class="tbd"></td>
+            </tr>
+            <tr>
+              <td class="zoom"><img src="My web images/a.png" class="tbd"></td>
+              <td class="zoom"><img src="My web images/b.png" class="tbd"></td>
+              <td class="zoom"><img src="My web images/c.png" class="tbd"></td>
+              <td class="zoom"><img src="My web images/d.png" class="tbd"></td>
+              </tr>
+              <tr>
+                <td class="zoom"><img src="My web images/e.png" class="tbd"></td>
+                <td class="zoom"><img src="My web images/f.png" class="tbd"></td>
+                <td class="zoom"><img src="My web images/g.png" class="tbd"></td>
+                <td class="zoom"><img src="My web images/h.png" class="tbd"></td>
+                </tr>
+                <tr>
+                  <td class="zoom"><img src="My web images/i.png" class="tbd"></td>
+                  <td class="zoom"><img src="My web images/j.png" class="tbd"></td>
+                  <td class="zoom"><img src="My web images/k.png" class="tbd"></td>
+                  </tr>
+        </table>
+      </div>
+    </body>
+</html>

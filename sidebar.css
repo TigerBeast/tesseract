@@ -1,0 +1,31 @@
+#LeftMenu{
+    height: 90%;
+    position: fixed;
+    width: 0;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+} 
+.mainNav{
+    margin-top: 70px;
+}
+.mainNav{
+    margin-bottom: 15px;
+}
+#LeftMenu a{
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.4s;
+    text-align: center;
+    text-transform: uppercase;
+}
+.img{
+    border-radius: 20px;
+}

@@ -1,0 +1,367 @@
+*{box-sizing: border-box;}
+
+/*Slideshow container*/
+.slideshow-container{
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.mySlides{
+    display: none;
+}
+
+
+/* Next & previous buttons*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 1300px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: right;
+    right: 20px;
+    top: 1600px;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 1600px;
+}
+.dot {
+    cursor: pointer;
+    height: 9px;
+    width: 9px;
+    margin: 0 10px;
+    background-color: #1a1a1a;
+    border:1px solid rgba(255, 255, 255, 0.575);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #ffffff
+}
+.bar{
+    cursor: pointer;
+    transition: border-bottom 0.6s ease;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    
+}
+.bar:hover{
+ border-bottom: 1px solid white;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+@keyframes fade {
+    from{opacity:.4}
+    to{opacity: 1}
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    padding: 20px;
+}
+.header{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #2a2a2a;
+}
+.leftcolumn{
+    float:left;
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+}
+.rightcolumn{
+    float: left;
+    width:25%;
+    padding-left: 20px;
+}
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.card{
+    background-color: #2a2a2a;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px){
+    .leftcolumn, .rightcolumn{
+        width:100px;
+        padding: 0;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .center{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal-box{
+    top: 40%;
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    height: auto;
+    width: 480px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+  }
+  
+  .start-btn.show-modal{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .modal-box.show-modal{
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: .4s;
+  }
+  .modal-box .fa-times{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0569d4;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 10px;
+  
+    color: white;
+    font-size: 18px;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .fa-times:hover{
+    font-size: 22px;
+  }
+  
+  
+  .form_container{
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 3px;
+  }
+  
+  .form_container .form_item{
+    margin-bottom: 25px;
+  }
+  
+  .form_container .form_wrap.form_grp{
+    display: flex;
+  }
+  
+  .form_container .form_wrap.form_grp .form_item{
+    width: 50%;
+  }
+  
+  .form_container .form_wrap.form_grp .form_item:first-child{
+    margin-right: 4%;
+  }
+  
+  .form_container .form_item label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form_container .form_item input,
+  .form_container .form_item select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 3px;
+  }
+   
+  .form_container .btn input[type="submit"]{
+    background: #6271f0;
+    border: 1px solid #6271f0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .tet{
+    color:rgb(189, 189, 189);
+  }
+  .mtn{
+    font-size: 15px;
+    font-family: Helvetica;
+    width: 140px;
+    height:40px;
+    border: 1px solid dodgerblue;
+    border-color: dodgerblue;
+    border-radius: 70px;
+    background-color: dodgerblue;
+  }
+  .h2{
+    color: white;
+  }
+  .tb{
+    background-color: #333; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    height: 120px;
+  }
+  .tat{
+    color:rgb(189, 189, 189);
+    font-family: Arial, sans-serif;
+  }
+  .zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overla {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  #overla {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #texti{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
